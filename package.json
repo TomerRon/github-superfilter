@@ -1,0 +1,26 @@
+{
+  "name": "github-superfilter",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Tomer Ron",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "browser": "web-ext run -s dist",
+    "lint": "tslint -t codeFrame -p .",
+    "start": "yarn run browser -p default",
+    "start:sandbox": "yarn run browser",
+    "watch": "webpack -w"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "5.0.4",
+    "ts-loader": "6.2.0",
+    "tslint": "5.20.0",
+    "tslint-functional-preset": "1.5.0",
+    "tslint-loader": "3.5.4",
+    "typescript": "3.6.3",
+    "web-ext": "3.2.0",
+    "webpack": "4.41.0",
+    "webpack-cli": "3.3.9"
+  }
+}

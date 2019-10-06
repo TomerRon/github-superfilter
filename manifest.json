@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Superfilter",
+  "version": "1.0.0",
+  "description": "Adds a lovely filter to Github pull requests",
+
+  "developer": {
+    "name": "Tomer Ron",
+    "url": "https://github.com/TomerRon"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["bundle.js"]
+    }
+  ]
+}
