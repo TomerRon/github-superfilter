@@ -5,7 +5,8 @@
   "author": "Tomer Ron",
   "license": "ISC",
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "rm -rf dist && webpack --mode=production",
+    "build-release": "yarn build && zip -r dist/superfilter.zip dist",
     "browser": "web-ext run -s dist",
     "lint": "tslint -t codeFrame -p .",
     "start": "yarn run browser -p default",
