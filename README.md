@@ -10,7 +10,7 @@
 
 - [Why use Github Superfilter?](#why-use-github-superfilter)
 - [Installation (browser)](#installation-browser)
-  - [Building/Downloading the extension](#building/downloading-the-extension)
+  - [Building/Downloading the extension](#buildingdownloading-the-extension)
   - [Installing the extension](#installing-the-extension)
 - [Installation (local development)](#installation-local-development)
 - [Usage](#usage)
