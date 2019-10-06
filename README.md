@@ -1,4 +1,4 @@
-# Github Superfilter :octocat:
+# Github Superfilter
 
 🚀 Github Superfilter is a web extension that adds a lovely filter to Github pull requests.
 
