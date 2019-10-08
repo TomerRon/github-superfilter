@@ -1,5 +1,7 @@
 # Github Superfilter
 
+[![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
+
 🚀 Github Superfilter is a web extension that adds a lovely filter to Github pull requests.
 
 <p align="center">
@@ -106,6 +108,12 @@ Use the standard (default) Firefox profile, which shares session/cookies with ot
 
 ```
 yarn start
+```
+
+Run the unit tests:
+
+```
+yarn test
 ```
 
 ## Build flow
