@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "build": "rm -rf dist && webpack --mode=production",
-    "build-release": "yarn build && zip -r dist/superfilter.zip dist",
+    "build-release": "yarn build && cd dist && zip -r superfilter.zip .",
     "browser": "web-ext run -s dist",
     "lint": "tslint -t codeFrame -p .",
     "test": "jest",
