@@ -1,12 +1,8 @@
-# GitHub Superfilter
+![GitHub Superfilter](assets/splash.png)
 
 [![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
 
 🚀 GitHub Superfilter is a web extension that adds a lovely filter to GitHub pull requests.
-
-<p align="center">
-  <img src="https://i.imgur.com/xU97mu1.gif">
-</p>
 
 ## Table of contents
 
