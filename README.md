@@ -1,4 +1,4 @@
-![GitHub Superfilter](assets/splash.png)
+[![GitHub Superfilter](assets/splash.png)](#)
 
 [![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
 
