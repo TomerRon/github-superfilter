@@ -1,8 +1,8 @@
-# Github Superfilter
+# GitHub Superfilter
 
 [![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
 
-🚀 Github Superfilter is a web extension that adds a lovely filter to Github pull requests.
+🚀 GitHub Superfilter is a web extension that adds a lovely filter to GitHub pull requests.
 
 <p align="center">
   <img src="https://i.imgur.com/xU97mu1.gif">
@@ -10,7 +10,7 @@
 
 ## Table of contents
 
-- [Why use Github Superfilter?](#why-use-github-superfilter)
+- [Why use GitHub Superfilter?](#why-use-github-superfilter)
 - [Installation (local development)](#installation-local-development)
 - [Installation (browser)](#installation-browser)
   - [Building/Downloading the extension](#buildingdownloading-the-extension)
@@ -19,11 +19,11 @@
 - [Build flow](#build-flow)
 - [License](#license)
 
-## Why use Github Superfilter?
+## Why use GitHub Superfilter?
 
-Github's default filter sucks! It only allows to filter by file extension, and it doesn't properly handle files with multiple extensions (like `.test.js`)
+GitHub's default filter sucks! It only allows to filter by file extension, and it doesn't properly handle files with multiple extensions (like `.test.js`)
 
-On the other hand, Github Superfilter is awesome!
+On the other hand, GitHub Superfilter is awesome!
 
 🎉 It gives you more control over how you filter your pull requests. You can search for files in a specific folder (`/components/`), or with a specific extension (`.test.js`). You can also filter out files (`!/src/` or `!test`)
 
@@ -43,7 +43,7 @@ yarn
 
 ## Installation (browser)
 
-Github Superfilter is currently not available in the Firefox/Chrome extension stores, so you need to manually install the add-on. If there's demand for an actual release, we will publish it in the Firefox/Chrome extension stores.
+GitHub Superfilter is currently not available in the Firefox/Chrome extension stores, so you need to manually install the add-on. If there's demand for an actual release, we will publish it in the Firefox/Chrome extension stores.
 
 ### Building/Downloading the extension
 
@@ -124,7 +124,7 @@ Create a build:
 yarn build
 ```
 
-Or, create a build and zip it (useful for Github releases):
+Or, create a build and zip it (useful for GitHub releases):
 
 ```
 yarn build-release

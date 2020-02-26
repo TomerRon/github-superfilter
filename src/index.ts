@@ -7,7 +7,7 @@ import injectionHandler from './handlers/injection'
 injectionHandler()
 
 /**
- * Github internal navigation events do not re-load the script,
+ * GitHub internal navigation events do not re-load the script,
  * so we also need to listen to pjax:end events
  */
 document.addEventListener('pjax:end', injectionHandler)
