@@ -15,5 +15,10 @@
       "matches": ["*://*.github.com/*"],
       "js": ["bundle.js"]
     }
-  ]
+  ],
+
+  "icons": {
+    "48": "assets/icon.png",
+    "96": "assets/icon@2x.png"
+  }
 }

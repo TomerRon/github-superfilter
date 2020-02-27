@@ -23,7 +23,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CopyPlugin(['manifest.json'])],
+  plugins: [new CopyPlugin(['manifest.json', { from: 'assets/icon*' }])],
   resolve: {
     extensions: ['.ts']
   },
