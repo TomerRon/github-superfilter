@@ -126,6 +126,10 @@ Or, create a build and zip it (useful for GitHub releases):
 yarn build-release
 ```
 
+## Contributors
+
+Huge shoutout to [fivenp](https://fivenp.com/) ([@fivenp](https://github.com/fivenp)) for the amazing assets. Go check out his work!
+
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details.
