@@ -3,12 +3,9 @@
 
   "name": "GitHub Superfilter",
   "version": "1.0.1",
+  "author": "Tomer Ron",
   "description": "Adds a lovely filter to GitHub pull requests",
-
-  "developer": {
-    "name": "Tomer Ron",
-    "url": "https://github.com/TomerRon"
-  },
+  "homepage_url": "https://github.com/TomerRon/github-superfilter",
 
   "content_scripts": [
     {
