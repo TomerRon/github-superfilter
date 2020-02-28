@@ -1,18 +1,16 @@
 [![GitHub Superfilter](assets/splash.png)](#)
 
-[![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
-
 🚀 GitHub Superfilter is a web extension that adds a lovely filter to GitHub pull requests.
 
-## Table of contents
+[![Build Status](https://travis-ci.org/TomerRon/github-superfilter.svg?branch=master)](https://travis-ci.org/TomerRon/github-superfilter)
+
+[![Get it on Firefox](assets/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/github-superfilter/) [![Get it on Chrome](assets/chrome.png)](https://chrome.google.com/webstore/detail/github-superfilter/kfpophkefjclocneelejpjbpkmboepfb)
 
 - [Why use GitHub Superfilter?](#why-use-github-superfilter)
-- [Installation (local development)](#installation-local-development)
-- [Installation (browser)](#installation-browser)
-  - [Building/Downloading the extension](#buildingdownloading-the-extension)
-  - [Installing the extension](#installing-the-extension)
+- [Installation](#installation)
 - [Development flow](#development-flow)
 - [Build flow](#build-flow)
+- [Contributors](#contributors)
 - [License](#license)
 
 ## Why use GitHub Superfilter?
@@ -27,7 +25,11 @@ On the other hand, GitHub Superfilter is awesome!
 
 🎉 It helps you become a better developer by making your life just a little bit easier
 
-## Installation (local development)
+## Installation
+
+Download the [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/github-superfilter/) or the [Chrome extension](https://chrome.google.com/webstore/detail/github-superfilter/kfpophkefjclocneelejpjbpkmboepfb).
+
+## Development flow
 
 Clone this repository, and install the dependencies:
 
@@ -37,54 +39,11 @@ cd github-superfilter
 yarn
 ```
 
-## Installation (browser)
+Run the unit tests:
 
-GitHub Superfilter is currently not available in the Firefox/Chrome extension stores, so you need to manually install the add-on. If there's demand for an actual release, we will publish it in the Firefox/Chrome extension stores.
-
-### Building/Downloading the extension
-
-#### Method 1: The Bad Way
-
-⚠️ **Don't do this!** You should never run unknown code in your browser.
-
-- Grab the latest [release](https://github.com/TomerRon/github-superfilter/releases).
-
-- Proceed to [Installing the extension](#installing-the-extension)
-
-#### Method 2: The Good Way
-
-- If you haven't already, [install github-superfilter locally](#installation-local-development)
-
-- Take 5 minutes to glance at the code. Don't run code in your browser without verifying it first!
-
-- Proceed to [Installing the extension](#installing-the-extension)
-
-### Installing the extension
-
-#### Firefox - temporary installation (manual)
-
-- Go to `about:debugging`
-- Press `Load Temporary Add-on`
-- Select the `dist/manifest.json` file. If you don't have one, run `yarn build`
-
-#### Firefox - temporary installation (command-line)
-
-Follow the instructions in [Development flow](#development-flow).
-
-This is nice because the extension will automatically reload when any changes are made.
-
-#### Firefox - permanent installation
-
-- Go to `about:addons`
-- Press the cogwheel in the top-right corner
-- Press `Install Add-on From File...`
-- Select the `dist/manifest.json` file. If you don't have one, run `yarn build`
-
-#### Google Chrome
-
-@TODO
-
-## Development flow
+```
+yarn test
+```
 
 Watch the files:
 
@@ -106,11 +65,7 @@ Use the standard (default) Firefox profile, which shares session/cookies with ot
 yarn start
 ```
 
-Run the unit tests:
-
-```
-yarn test
-```
+**Note**: If you are having issues running `yarn start`, you can also navigate to `about:debugging` in Firefox, press `Load Temporary Add-on` and select the `dist/manifest.json` file.
 
 ## Build flow
 
@@ -120,7 +75,7 @@ Create a build:
 yarn build
 ```
 
-Or, create a build and zip it (useful for GitHub releases):
+Or, create a build and zip it (useful for GitHub/Firefox/Chrome releases):
 
 ```
 yarn build-release
