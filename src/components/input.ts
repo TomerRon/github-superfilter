@@ -6,7 +6,7 @@ import inputHandler from '../handlers/input'
 
 const input = document.createElement('input')
 
-const options: Record<string, any> = {
+const options = {
   autocomplete: 'off',
   autofocus: true,
   className: 'form-control',
@@ -15,7 +15,4 @@ const options: Record<string, any> = {
   type: 'text'
 }
 
-// tslint:disable-next-line:no-expression-statement no-object-mutation
-Object.keys(options).map(key => ((input as any)[key] = options[key]))
-
-export default input
+export default Object.assign(input, options) // tslint:disable-line no-object-mutation prefer-object-spread
