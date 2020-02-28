@@ -1,5 +1,4 @@
 import inputHandler from '../handlers/input'
-import { IIndexSignature } from '../types'
 
 /**
  * Returns the superfilter input element
@@ -7,7 +6,7 @@ import { IIndexSignature } from '../types'
 
 const input = document.createElement('input')
 
-const options: IIndexSignature<any> = {
+const options: Record<string, any> = {
   autocomplete: 'off',
   autofocus: true,
   className: 'form-control',

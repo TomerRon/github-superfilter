@@ -1,12 +1,10 @@
-import { IIndexSignature } from '../types'
-
 /**
  * Returns the superfilter diffbar button
  */
 
 const item = document.createElement('details')
 
-const options: IIndexSignature<string> = {
+const options: Record<string, string> = {
   className:
     'details-reset details-overlay diffbar-item toc-select select-menu',
   id: 'superfilter',
