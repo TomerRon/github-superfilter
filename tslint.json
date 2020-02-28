@@ -1,6 +1,7 @@
 {
   "extends": ["tslint-functional-preset"],
   "rules": {
-    "object-literal-sort-keys": true
+    "object-literal-sort-keys": true,
+    "ordered-imports": true
   }
 }

@@ -4,7 +4,7 @@ import { showElement } from './element'
 /**
  * Returns all files that are currently loaded into the page
  */
-export const getFiles = (): ReadonlyArray<IFile> =>
+export const getFiles = (): readonly IFile[] =>
   Array.from(document.getElementsByClassName('file')).map(node => ({
     name: node.querySelector('.file-info').querySelector('a').text,
     node: node as HTMLElement

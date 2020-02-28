@@ -1,5 +1,4 @@
 import inputHandler from '../handlers/input'
-import { IIndexSignature } from '../types'
 
 /**
  * Returns the superfilter input element
@@ -7,7 +6,7 @@ import { IIndexSignature } from '../types'
 
 const input = document.createElement('input')
 
-const options: IIndexSignature<any> = {
+const options = {
   autocomplete: 'off',
   autofocus: true,
   className: 'form-control',
@@ -16,7 +15,4 @@ const options: IIndexSignature<any> = {
   type: 'text'
 }
 
-// tslint:disable-next-line:no-expression-statement no-object-mutation
-Object.keys(options).map(key => ((input as any)[key] = options[key]))
-
-export default input
+export default Object.assign(input, options) // tslint:disable-line no-object-mutation prefer-object-spread

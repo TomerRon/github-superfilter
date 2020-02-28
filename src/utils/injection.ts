@@ -2,7 +2,7 @@
  * Returns true if superfilter should be injected
  */
 export const shouldInjectSuperfilter = () => {
-  const conditions: ReadonlyArray<boolean> = [
+  const conditions: readonly boolean[] = [
     // URL should match regex
     !!window.location.href.match(/.*github\.com\/.*\/pull\/.*\/files.*/),
     // Superfilter should not already be in the page

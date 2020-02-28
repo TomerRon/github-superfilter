@@ -10,7 +10,7 @@ describe('injection handler', () => {
   const nextSiblingMock = jest.fn()
 
   jest.spyOn(button, 'querySelector').mockImplementation(
-    f =>
+    () =>
       ({
         appendChild: buttonAppendChildSpy
       } as any)

@@ -1,12 +1,10 @@
-import { IIndexSignature } from '../types'
-
 /**
  * Returns the superfilter diffbar button
  */
 
 const item = document.createElement('details')
 
-const options: IIndexSignature<string> = {
+const options = {
   className:
     'details-reset details-overlay diffbar-item toc-select select-menu',
   id: 'superfilter',
@@ -27,7 +25,4 @@ const options: IIndexSignature<string> = {
     </details-menu>'
 }
 
-// tslint:disable-next-line:no-expression-statement no-object-mutation
-Object.keys(options).map(key => ((item as any)[key] = options[key]))
-
-export default item
+export default Object.assign(item, options) // tslint:disable-line no-object-mutation prefer-object-spread

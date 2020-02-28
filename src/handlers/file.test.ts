@@ -1,10 +1,11 @@
 // tslint:disable:no-expression-statement
+import { IFile } from '../types'
 import * as elementUtilsModule from '../utils/element'
 import fileHandler from './file'
 
-const FILE: any = {
+const FILE: IFile = {
   name: 'foobar-name',
-  node: { foo: 'bar' }
+  node: { foo: 'bar' } as any
 }
 
 describe('file handler', () => {
@@ -30,7 +31,7 @@ describe('file handler', () => {
     it('should show a file if it does not match', () => {
       const value = '!nope'
 
-      fileHandler({ ...FILE, name: 'foobar-name' }, value)
+      fileHandler(FILE, value)
 
       expect(hideElementSpy).not.toHaveBeenCalled()
       expect(showElementSpy).toHaveBeenCalledWith(FILE.node)
