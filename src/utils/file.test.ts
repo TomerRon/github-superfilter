@@ -2,10 +2,7 @@
 import * as elementUtilsModule from './element'
 import { getFiles, sanitizeValue, showAllFiles } from './file'
 
-const FILENAMES: ReadonlyArray<string> = [
-  'foobar-filename-1',
-  'foobar-filename-2'
-]
+const FILENAMES: readonly string[] = ['foobar-filename-1', 'foobar-filename-2']
 
 const NODES = FILENAMES.map(filename => ({
   querySelector: (_0: string) => ({
@@ -53,7 +50,7 @@ describe('file utils', () => {
     })
 
     it('should return given value by default', () => {
-      expect(sanitizeValue(`${TEST_STRING}`)).toEqual(TEST_STRING)
+      expect(sanitizeValue(TEST_STRING)).toEqual(TEST_STRING)
     })
   })
 })

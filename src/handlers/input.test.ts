@@ -23,7 +23,7 @@ describe('input handler', () => {
   })
 
   it('should call getFiles and fileHandler when given a value', () => {
-    const files: ReadonlyArray<string> = ['file-1', 'file-2']
+    const files: readonly string[] = ['file-1', 'file-2']
     const value = 'foobar-value'
 
     jest

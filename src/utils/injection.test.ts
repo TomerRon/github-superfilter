@@ -23,7 +23,7 @@ describe('injection utils', () => {
     it('should return false if window url does not match regex', () => {
       jest.spyOn(document, 'querySelector').mockImplementationOnce(() => null)
 
-      const invalidUrls: ReadonlyArray<string> = [
+      const invalidUrls: readonly string[] = [
         'https://github.com/foobar/foobar/pull/1337',
         'https://github.com/foobar/foobar/',
         'https://www.google.com'
