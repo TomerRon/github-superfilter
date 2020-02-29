@@ -25,6 +25,8 @@ On the other hand, GitHub Superfilter is awesome!
 
 🎉 It helps you become a better developer by making your life just a little bit easier
 
+[![Example](assets/example.png)](#)
+
 ## Installation
 
 Download the [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/github-superfilter/) or the [Chrome extension](https://chrome.google.com/webstore/detail/github-superfilter/kfpophkefjclocneelejpjbpkmboepfb).
